@@ -3,12 +3,10 @@ name = "In-Class_Programming--Vega-Altair"
 version = "0.1.0"
 description = ""
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13"
 dependencies = [
     "altair[all]>=6.0.0",
-    "marimo>=0.19.1",
-    "nbformat>=5.10.4",
-    "pandas>=2.3.3",
+    "marimo>=0.19.8",
+    "pandas>=3.0.0",
     "vega-datasets>=0.9.0",
-    "wheel>=0.45.1",
 ]

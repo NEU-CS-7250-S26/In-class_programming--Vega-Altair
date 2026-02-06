@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.19.8"
-app = marimo.App(width="medium", layout_file="layouts/south_end.slides.json")
+app = marimo.App(width="medium")
 
 
 @app.cell
@@ -412,7 +412,9 @@ def _(mo):
 def _(chart_occupancy):
     chart_occupancy.save("charts/chart_occupancy.svg")
     chart_occupancy.save("charts/chart_occupancy.png", scale_factor=3)  # 1-5
-    chart_occupancy.save("charts/chart_occupancy.html", embed_options={"renderer": "svg"})
+    chart_occupancy.save(
+        "charts/chart_occupancy.html", embed_options={"renderer": "svg"}
+    )
     return
 
 
